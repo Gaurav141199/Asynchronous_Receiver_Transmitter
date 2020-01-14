@@ -1,0 +1,15 @@
+Assignment 10:
+
+Aim: File download/upload through Serial Receiver/Transmitter
+
+Abstract Design:
+We expanded upon the asynchronous Reciever/Transmitter made in the previous labs by implementing a memory module to store the data received from the gtkterm. ASCII value of each character is stored in one of the 256 memory locations. We also introduced an option to reset each entity asynchronously. Once the user presses the push button to transmit the data, all the text in the memory is sent character by character in each clock cycle. We introduced a timing circuit to control the functionality of the whole design.
+
+
+Implementation:
+We instantiated each component and sent a clock with a baud rate of 9600 Hz to the transmitter. We also implemented push buttons debouncing by sampling at a rate of 6400 Hz. 
+
+
+Test Cases:
+All the data was successfully received and transmitted.
+Reset button also behaves according to the specifications.
